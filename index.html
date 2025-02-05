@@ -4,190 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanessa da Silva | Software Developer</title>
-    <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        :root {
-            --primary-color: #64ffda;
-            --background-color: #0a192f;
-            --text-color: #ccd6f6;
-            --accent-color: #112240;
-            --hover-color: #8892b0;
-            --font-main: 'Inter', sans-serif;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            background: var(--background-color);
-            color: var(--text-color);
-            font-family: var(--font-main);
-            max-width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .sidebar {
-            width: 280px;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            padding: 40px;
-            left: 0;
-            top: 0;
-        }
-
-        .sidebar h1 {
-            font-size: 2.5em;
-            color: var(--text-color);
-            margin-bottom: 10px;
-        }
-
-        .sidebar p {
-            font-size: 1.2em;
-            color: var(--hover-color);
-        }
-
-        .sidebar nav ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-        }
-
-        .sidebar nav ul li {
-            margin: 15px 0;
-        }
-
-        .sidebar nav ul li a {
-            text-decoration: none;
-            color: var(--hover-color);
-            font-size: 1.1em;
-            transition: 0.3s;
-        }
-
-        .sidebar nav ul li a:hover {
-            color: var(--primary-color);
-        }
-
-        .main-content {
-            margin-left: 300px;
-            width: calc(100% - 320px);
-            padding: 80px 50px;
-        }
-
-        .section {
-            margin-bottom: 80px;
-            max-width: 750px;
-        }
-
-        .section h2 {
-            font-size: 2em;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-
-        .section p {
-            font-size: 1.2em;
-            color: var(--hover-color);
-        }
-
-        .cta {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: var(--primary-color);
-            color: var(--background-color);
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-            transition: 0.3s;
-        }
-
-        .cta:hover {
-            background-color: var(--hover-color);
-        }
-
-        .social-media {
-            align-items: center;
-            display: flex;
-            margin-top: 10px;
-            list-style: none;
-        }
-
-        .social-media .item {
-            font-size: 10px;
-            margin-right: 15px;
-        }
-    </style>
+    <script src="/assets/js/main.js"></script>
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
 <div class="container">
     <header class="sidebar">
-        <div class="introduction">
-            <h1>Vanessa da Silva</h1>
-            <p>Software Developer</p>
+        <div class="top">
+            <div class="introduction">
+                <h1 class="name">Vanessa da Silva</h1>
+                <div class="role">Software Developer</div>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about"><span class="line"></span> About</a></li>
+                    <li><a href="#experience"><span class="line"></span>Experience</a></li>
+                    <li><a href="#projects"><span class="line"></span>Projects</a></li>
+                    <li><a href="#contact"><span class="line"></span>Contact</a></li>
                 </ul>
             </nav>
         </div>
-        <ul class="social-media" aria-label="Social media">
-            <li class="item">
-                <a class="block hover:text-slate-200" href="https://github.com/vanessavps"
-                   target="_blank" rel="noreferrer noopener"
-                   aria-label="GitHub (opens in a new tab)" title="GitHub"><span
-                        class="sr-only">GitHub</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6"
-                         aria-hidden="true">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                    </svg>
-                </a>
-            </li>
-            <li class="item">
-                <a class="block hover:text-slate-200"
-                   href="https://www.linkedin.com/in/vanessavps/" target="_blank"
-                   rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)"
-                   title="LinkedIn"><span class="sr-only">LinkedIn</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"
-                         aria-hidden="true">
-                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                    </svg>
-                </a>
-            </li>
-            <li class="item">
-                <a class="block hover:text-slate-200"
-                   href="vanessa.vps29@gmail.com" target="_blank"
-                   rel="noreferrer noopener" aria-label="Email"
-                   title="Instagram"><span class="sr-only">Email</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
-                </a>
-            </li>
-
-        </ul>
+        <div class="bottom">
+            <ul class="social-media-list" aria-label="Social media">
+                <li class="item">
+                    <a class="block hover:text-slate-200" href="https://github.com/vanessavps"
+                       target="_blank" rel="noreferrer noopener"
+                       aria-label="GitHub (opens in a new tab)" title="GitHub"><span
+                            class="sr-only">GitHub</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6"
+                             aria-hidden="true">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="block hover:text-slate-200"
+                       href="https://www.linkedin.com/in/vanessavps/" target="_blank"
+                       rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)"
+                       title="LinkedIn"><span class="sr-only">LinkedIn</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"
+                             aria-hidden="true">
+                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="block hover:text-slate-200"
+                       href="vanessa.vps29@gmail.com" target="_blank"
+                       rel="noreferrer noopener" aria-label="Email"
+                       title="Instagram"><span class="sr-only">Email</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
     </header>
 
     <main class="main-content">
         <section id="about" class="section">
             <h2>About Me</h2>
-            <p>I build high-quality, efficient applications with Java, JavaScript, and a touch of elegance.</p>
+            <p>I’m Vanessa da Silva, a software developer with over 10 years of experience building scalable,
+                high-performance applications.
+                My expertise lies in Java, JavaScript, and backend integration, and I thrive on crafting efficient,
+                well-structured solutions.
+            </p>
+            <p>
+                From enterprise banking systems to e-commerce platforms, I’ve worked across diverse industries, creating
+                robust APIs, automation tools, and scalable microservices. Passionate about continuous learning, I enjoy
+                tackling complex challenges, optimizing workflows, and delivering clean, maintainable code that makes a
+                difference.
+            </p>
+            <p>
+                When I’m not deep in code, you’ll find me exploring new technologies, refining my craft, or diving into
+                books on self-improvement and business growth.
+            </p>
+
         </section>
 
         <section id="experience" class="section">
             <h2>Experience</h2>
-            <p>Details about past roles, projects, or significant contributions in the industry.</p>
+            <div class="employer">
+                <div class="role-title">
+                    Senior Software Developer | ANZ - New Zealand (2017 - 2022)
+                </div>
+                <div class="description">
+                    Developed internet banking features using Java, Ember.js, and Handlebars.js.
+                    Maintained RESTful APIs for the bank's mobile app, ensuring smooth transactions.
+                    Created an automation tool using Java, JSP, Handlebars, and jQuery to streamline processes.
+                    Led the development of microservices for IBM Datapower Gateway using Node.js.
+                    Provided mentorship to junior developers and collaborated with test teams.
+                </div>
+            </div>
+
+            <div class="employer">
+                <div class="role-title">
+                    Software Developer | VizExplorer - New Zealand
+                </div>
+                <div class="description">
+                    Developed payment features for online banking using Java, Ember.js, and CSS.
+                    Maintained and enhanced RESTful APIs for the bank’s mobile applications.
+                    Created and managed a T-SQL comparison tool using ANTLR.
+                    Worked closely with QA teams, ensuring high-performance integrations and stability.
+                </div>
+            </div>
+
+            <div class="employer">
+                <div class="role-title">
+                    Software Developer | iCarros - Brazil (2015 - 2017)
+                </div>
+                <div class="description">
+                    Built full-stack solutions for the iCarros website using Java, JSF, jQuery, and PostgreSQL.
+                    Developed a user ranking system using AWS Machine Learning to improve loan filtering.
+                    Maintained big data processing pipelines with AWS Data Pipeline and Apache Pig.
+                </div>
+            </div>
         </section>
 
         <section id="projects" class="section">
-            <h2>Projects</h2>
+            <h2>Personal Projects</h2>
             <p>Highlight notable projects with descriptions and links.</p>
         </section>
 
