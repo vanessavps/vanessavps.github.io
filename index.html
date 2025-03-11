@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanessa da Silva | Software Developer</title>
+    <title>Vanessa da Silva</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
-<body class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 text-lg">
-<div class="container flex justify-between">
-    <header class="sidebar">
+<!--
+    bg-indigo-950
+bg-pink-950
+bg-rose-950
+bg-zinc-900
+-->
+<body class="bg-zinc-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 text-lg">
+<div id="flashlight"></div>
+
+<div class="w-full flex lg:justify-between">
+    <header class="sidebar hidden sticky top-0 h-screen lg:flex w-115">
         <div class="top">
             <div class="introduction">
                 <h1 class="name text-3xl font-bold text-teal-400 mb-4">Vanessa da Silva</h1>
@@ -82,7 +90,8 @@
 
     </header>
 
-    <main id="main-content" class="p-10 max-w-4xl mx-auto">
+    <!--<main id="main-content" class="w-full ml-15 flex-1 lg:p-10 mx-auto lg:ml-64 max-w-none" >-->
+    <main id="main-content" class="w-full flex-1 p-5 lg:p-10 lg:ml-64" >
         <section id="about" class="section mb-20">
             <h2 class="text-3xl font-bold text-teal-400 mb-4">About Me</h2>
             <p class="mb-4">I’m Vanessa da Silva, a software developer with over 10 years of experience building
@@ -106,6 +115,27 @@
 
         <section id="experience" class="section mb-20">
             <h2 class="text-3xl font-bold text-teal-400 mb-4">Experience</h2>
+            <div class="employer grid grid-cols-8">
+                <div class="years mb-2 col-span-2">2022 — Current</div>
+                <div class="details mb-6 col-span-6">
+                    <div class="role-title font-semibold text-lg text-slate-300">
+                        Team Leader - Centricminds
+                        <div class="other-roles text-zinc-500">
+                            Senior Java Developer
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p class="mb-4">
+                            Developed internet banking features using Java, Ember.js, and Handlebars.js.
+                            Maintained RESTful APIs for the bank's mobile app, ensuring smooth transactions.
+                            Created an automation tool using Java, JSP, Handlebars, and jQuery to streamline processes.
+                            Led the development of microservices for IBM Datapower Gateway using Node.js.
+                            Provided mentorship to junior developers and collaborated with test teams.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <div class="employer grid grid-cols-8">
                 <div class="years mb-2 col-span-2">2019 — 2021</div>
                 <div class="details mb-6 col-span-6">
