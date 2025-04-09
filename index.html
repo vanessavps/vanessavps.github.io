@@ -1,370 +1,296 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	Adapted by https://github.com/vanessavps
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanessa da Silva</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css"/>
-    </noscript>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
-<body class="is-preload">
+<!--
+    bg-indigo-950
+bg-pink-950
+bg-rose-950
+bg-zinc-900
+-->
+<body class="bg-zinc-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 text-lg">
+<div id="flashlight"></div>
 
-<div id="wrapper">
-    <header id="header">
-        <div class="logo">
-            <span class="icon fa-gem"></span>
-        </div>
-        <div class="content">
-            <div class="inner">
-                <h1>Hi, I'm Vanessa da Silva</h1>
-                <p>Full stack developer</p>
+<div class="w-full flex lg:justify-between">
+    <header class="sidebar hidden sticky top-0 h-screen lg:flex w-115">
+        <div class="top">
+            <div class="introduction">
+                <h1 class="name text-3xl font-bold text-teal-400 mb-4">Vanessa da Silva</h1>
+                <div class="role text-gray-400">Software Developer</div>
             </div>
+            <nav class="mt-6">
+                <ul class="space-y-4">
+                    <li>
+                        <a href="#about" class="hover:text-slate-300 transition font-bold uppercase text-base">
+                            <span class="line"></span>About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="hover:text-slate-300 transition font-bold uppercase text-base">
+                            <span class="line"></span>Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="hover:text-slate-300 transition font-bold uppercase text-base">
+                            <span class="line"></span>Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="hover:text-slate-300 transition font-bold uppercase text-base">
+                            <span class="line"></span>Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <div class="bottom">
+            <ul class="social-media-list" aria-label="Social media">
+                <li class="item">
+                    <a class="block hover:text-slate-200" href="https://github.com/vanessavps"
+                       target="_blank" rel="noreferrer noopener"
+                       aria-label="GitHub (opens in a new tab)" title="GitHub"><span
+                            class="sr-only">GitHub</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6"
+                             aria-hidden="true">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="block hover:text-slate-200"
+                       href="https://www.linkedin.com/in/vanessavps/" target="_blank"
+                       rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)"
+                       title="LinkedIn"><span class="sr-only">LinkedIn</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"
+                             aria-hidden="true">
+                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="block hover:text-slate-200"
+                       href="vanessa.vps29@gmail.com" target="_blank"
+                       rel="noreferrer noopener" aria-label="Email"
+                       title="Instagram"><span class="sr-only">Email</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                        </svg>
+                    </a>
+                </li>
             </ul>
-        </nav>
+        </div>
+
     </header>
 
-    <div id="main">
-
-        <!-- About -->
-        <article id="about">
-            <h2 class="major">About</h2>
-
-            <p> Hi! I'm Vanessa da Silva.</p>
-            <p>I'm a brazilian living in New Zealand since 2017.</p>
-            <img class="octocat" src="images/octocat-about.png" alt="vanessa octocat"/>
-            <p>Visit my <a href=https://www.linkedin.com/in/vanessavps/>LinkedIn</a> profile for more details or
-                download my <a href=/resume.pdf>resume</a>.</p>
-        </article>
-
-        <!-- Work -->
-        <article id="work">
-            <h2 class="major">Work</h2>
-
-            <p> I'm a software developer driven by a passion for learning new skills, handling complex problems, and
-                delivering
-                high-quality software. </p>
-            <p>I've been working mostly with Java tech stack, but I also have experience with Ember.js, Node.js, and AWS
-                Machine Learning</p>
-            <img class="octocat" src="images/octocat-work.png" alt="vanessa octocat"/>
-            <p>Visit my <a href=https://www.linkedin.com/in/vanessavps/>LinkedIn</a> profile for more details or
-                download my <a href=/resume.pdf>resume</a>.</p>
-        </article>
-
-        <!-- Intro -->
-        <article id="projects">
-            <h2 class="major">Projects</h2>
-            <p>Check out the projects I have been working on <a href="https://github.com/vanessavps?tab=repositories">Github</a>
+    <!--<main id="main-content" class="w-full ml-15 flex-1 lg:p-10 mx-auto lg:ml-64 max-w-none" >-->
+    <main id="main-content" class="w-full flex-1 p-5 lg:p-10 lg:ml-64">
+        <section id="about" class="section mb-20">
+            <h2 class="text-3xl font-bold text-teal-400 mb-4">About Me</h2>
+            <p class="mb-4"> I’m Vanessa da Silva. A software developer who blends clever structure with dependable
+                execution. With over a decade of experience, I specialize in crafting clean, scalable, and maintainable
+                code using Java, JSP, and JavaScript. But I’m not married to any stack. I’m tech-agnostic, adaptable,
+                and fluent in problem-solving.
             </p>
-        </article>
+            <p class="mb-4">
+                I thrive on digging into the root cause of issues, automating chaos away, and writing code that's not
+                just functional but elegant and easy to understand. Whether I’m collaborating with a team or flying
+                solo, I manage my time and tasks with purpose. No micromanaging needed.
+            </p>
+            <p class="mb-4">
+                What sets me apart? I treat code as a creative act. It’s where logic meets intuition. I follow the Boy
+                Scout Rule: leave the code better than you found it. That mindset pushes me to refactor, rethink, and
+                constantly refine.
+            </p>
+            <p class="mb-4">
+                When I’m not coding, I’m buried in a book, dancing off stress, hitting the tennis court, or diving
+                headfirst into a new side quest. I love keeping my mind active and exploring whatever catches my
+                curiosity.
+            </p>
 
+        </section>
 
-        <!-- Contact -->
-        <article id="contact">
-            <h2 class="major">Contact</h2>
-
-            <p>You can find me on:</p>
-
-            <ul class="icons">
-                <li>
-                    <a href="https://www.linkedin.com/in/vanessavps/" target="_blank" title="LinkedIn">
-                        <i class="icon brands fa fa-linkedin-in" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://github.com/vanessavps" target="_blank" title="Github">
-                        <i class="icon brands fa fa-github" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:vanessa.vps29@gmail.com" target="_blank" title="Email">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-        </article>
-
-        <!-- Elements -->
-        <article id="elements">
-            <h2 class="major">Elements</h2>
-
-            <section>
-                <h3 class="major">Text</h3>
-                <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-                    This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-                    This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this
-                        is a link</a>.</p>
-                <hr/>
-                <h2>Heading Level 2</h2>
-                <h3>Heading Level 3</h3>
-                <h4>Heading Level 4</h4>
-                <h5>Heading Level 5</h5>
-                <h6>Heading Level 6</h6>
-                <hr/>
-                <h4>Blockquote</h4>
-                <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus
-                    euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-                    volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor
-                    sit amet nullam adipiscing eu felis.
-                </blockquote>
-                <h4>Preformatted</h4>
-                <pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-            </section>
-
-            <section>
-                <h3 class="major">Lists</h3>
-
-                <h4>Unordered</h4>
-                <ul>
-                    <li>Dolor pulvinar etiam.</li>
-                    <li>Sagittis adipiscing.</li>
-                    <li>Felis enim feugiat.</li>
-                </ul>
-
-                <h4>Alternate</h4>
-                <ul class="alt">
-                    <li>Dolor pulvinar etiam.</li>
-                    <li>Sagittis adipiscing.</li>
-                    <li>Felis enim feugiat.</li>
-                </ul>
-
-                <h4>Ordered</h4>
-                <ol>
-                    <li>Dolor pulvinar etiam.</li>
-                    <li>Etiam vel felis viverra.</li>
-                    <li>Felis enim feugiat.</li>
-                    <li>Dolor pulvinar etiam.</li>
-                    <li>Etiam vel felis lorem.</li>
-                    <li>Felis enim et feugiat.</li>
-                </ol>
-                <h4>Icons</h4>
-                <ul class="icons">
-                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                </ul>
-
-                <h4>Actions</h4>
-                <ul class="actions">
-                    <li><a href="#" class="button primary">Default</a></li>
-                    <li><a href="#" class="button">Default</a></li>
-                </ul>
-                <ul class="actions stacked">
-                    <li><a href="#" class="button primary">Default</a></li>
-                    <li><a href="#" class="button">Default</a></li>
-                </ul>
-            </section>
-
-            <section>
-                <h3 class="major">Table</h3>
-                <h4>Default</h4>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Price</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Item One</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Two</td>
-                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Three</td>
-                            <td> Morbi faucibus arcu accumsan lorem.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Four</td>
-                            <td>Vitae integer tempus condimentum.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Five</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                        </tbody>
-                        <tfoot>
-                        <tr>
-                            <td colspan="2"></td>
-                            <td>100.00</td>
-                        </tr>
-                        </tfoot>
-                    </table>
-                </div>
-
-                <h4>Alternate</h4>
-                <div class="table-wrapper">
-                    <table class="alt">
-                        <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Price</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Item One</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Two</td>
-                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Three</td>
-                            <td> Morbi faucibus arcu accumsan lorem.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Four</td>
-                            <td>Vitae integer tempus condimentum.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Five</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                        </tbody>
-                        <tfoot>
-                        <tr>
-                            <td colspan="2"></td>
-                            <td>100.00</td>
-                        </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </section>
-
-            <section>
-                <h3 class="major">Buttons</h3>
-                <ul class="actions">
-                    <li><a href="#" class="button primary">Primary</a></li>
-                    <li><a href="#" class="button">Default</a></li>
-                </ul>
-                <ul class="actions">
-                    <li><a href="#" class="button">Default</a></li>
-                    <li><a href="#" class="button small">Small</a></li>
-                </ul>
-                <ul class="actions">
-                    <li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-                    <li><a href="#" class="button icon solid fa-download">Icon</a></li>
-                </ul>
-                <ul class="actions">
-                    <li><span class="button primary disabled">Disabled</span></li>
-                    <li><span class="button disabled">Disabled</span></li>
-                </ul>
-            </section>
-
-            <section>
-                <h3 class="major">Form</h3>
-                <form method="post" action="#">
-                    <div class="fields">
-                        <div class="field half">
-                            <label for="demo-name">Name</label>
-                            <input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe"/>
-                        </div>
-                        <div class="field half">
-                            <label for="demo-email">Email</label>
-                            <input type="email" name="demo-email" id="demo-email" value=""
-                                   placeholder="jane@untitled.tld"/>
-                        </div>
-                        <div class="field">
-                            <label for="demo-category">Category</label>
-                            <select name="demo-category" id="demo-category">
-                                <option value="">-</option>
-                                <option value="1">Manufacturing</option>
-                                <option value="1">Shipping</option>
-                                <option value="1">Administration</option>
-                                <option value="1">Human Resources</option>
-                            </select>
-                        </div>
-                        <div class="field half">
-                            <input type="radio" id="demo-priority-low" name="demo-priority" checked>
-                            <label for="demo-priority-low">Low</label>
-                        </div>
-                        <div class="field half">
-                            <input type="radio" id="demo-priority-high" name="demo-priority">
-                            <label for="demo-priority-high">High</label>
-                        </div>
-                        <div class="field half">
-                            <input type="checkbox" id="demo-copy" name="demo-copy">
-                            <label for="demo-copy">Email me a copy</label>
-                        </div>
-                        <div class="field half">
-                            <input type="checkbox" id="demo-human" name="demo-human" checked>
-                            <label for="demo-human">Not a robot</label>
-                        </div>
-                        <div class="field">
-                            <label for="demo-message">Message</label>
-                            <textarea name="demo-message" id="demo-message" placeholder="Enter your message"
-                                      rows="6"></textarea>
+        <section id="experience" class="section mb-20">
+            <h2 class="text-3xl font-bold text-teal-400 mb-4">Experience</h2>
+            <div class="employer grid grid-cols-8">
+                <div class="years mb-2 col-span-2">2022 — Current</div>
+                <div class="details mb-6 col-span-6">
+                    <div class="role-title font-semibold text-lg text-slate-300">
+                        Team Leader - Centricminds
+                        <div class="other-roles text-zinc-500">
+                            Senior Java Developer
                         </div>
                     </div>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" class="primary"/></li>
-                        <li><input type="reset" value="Reset"/></li>
-                    </ul>
-                </form>
-            </section>
+                    <div class="description">
+                        <ul class="list-disc">
+                            <li class="mb-3">
+                                Leading a small development team focused on building and maintaining an intranet CMS
+                                using Java, JSP, and JavaScript.
+                            </li>
 
-        </article>
+                            <li class="mb-3">
+                                Developed and maintained secure REST APIs following HATEOAS principles, including
+                                integrations with platforms like SharePoint, Splunk, and Duo for seamless system
+                                connectivity and enhanced application security through MFA.
+                            </li>
+                            <li class="mb-3">
+                                Introduced and implemented a structured ticket triage process that reduced backlog from
+                                120+
+                                tickets to under 15. This included account provisioning workflows, clear ticket tagging,
+                                escalation protocols, and dashboard visibility across team workloads.
+                            </li>
+                            <li class="mb-3">
+                                Responsible for ticket assignment and workload balancing across developers based on
+                                active
+                                queue sizes.
+                            </li>
+                            <li class="mb-3">
+                                Conducted one-on-one meetings with developers to identify blockers and improve daily
+                                workflows.
+                            </li>
+                            <li class="mb-3">
+                                Participated in candidate interviews, conducted technical assessments, and reviewed code
+                                submissions to ensure high hiring standards.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-    </div>
+            <div class="employer grid grid-cols-8">
+                <div class="years mb-2 col-span-2">2019 — 2022</div>
+                <div class="details mb-6 col-span-6">
+                    <div class="role-title font-semibold text-lg text-slate-300">
+                        Senior Software Developer - ANZ (Australia and New Zealand Banking Group)
+                        <div class="other-roles text-zinc-500">
+                            Senior Integration Developer
+                        </div>
+                    </div>
+                    <div class="description">
+                        <ul class="list-disc">
+                            <li class="mb-3">
+                                Developed and enhanced internet banking features using Java, Ember.js, and
+                                Handlebars.js, improving user experience across customer-facing platforms.
+                            </li>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <p class="copyright">Vanessa da Silva. Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>.</p>
-    </footer>
+                            <li class="mb-3">
+                                Maintained and optimized REST APIs to support high-volume mobile app transactions
+                                with consistent performance and stability.
+                            </li>
+                            <li class="mb-3">
+                                Built internal automation tools using Java, JSP, Handlebars, and jQuery to streamline
+                                workflows and reduce manual overhead.
+                            </li>
+                            <li class="mb-3">
+                                Built microservices for IBM DataPower Gateway using Node.js.
+                            </li>
+                            <li class="mb-3">
+                                Collaborated closely with QA teams to ensure high code quality and reliable delivery.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
+            <div class="employer grid grid-cols-8 ">
+                <div class="years mb-2 col-span-2">2017 — 2019</div>
+                <div class="details mb-6 col-span-6">
+                    <div class="role-title font-semibold text-lg text-slate-300">
+                        Software Developer - VizExplorer
+                    </div>
+                    <div class="description">
+                        <ul class="list-disc">
+                            <li class="mb-3">
+                                Maintained and enhanced an internal automation tool using Java, JSP, Handlebars, jQuery,
+                                and CSS.
+                            </li>
+
+                            <li class="mb-3">
+                                Built a REST API utility in Java to automate tasks and run batch validations, improving
+                                workflow efficiency.
+                            </li>
+                            <li class="mb-3">
+                                Maintained Jenkins CI/CD pipelines to ensure stable deployment and integration flows.
+                            </li>
+                            <li class="mb-3">
+                                Created a T-SQL comparison tool using ANTLR, streamlining database analysis and reducing
+                                manual review.
+                            </li>
+                            <li class="mb-3">
+                                Mentored a junior developer by providing code reviews, technical guidance, and process
+                                support.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="employer grid grid-cols-8">
+                <div class="years mb-2 col-span-2">2015 — 2017</div>
+                <div class="details mb-6 col-span-6">
+                    <div class="role-title font-semibold text-lg text-slate-300">
+                        Software Developer - iCarros
+                    </div>
+                    <div class="description">
+                        <ul class="list-disc">
+                            <li class="mb-3">
+                                Delivered full-stack solutions for the iCarros platform using Java, JSF, jQuery, and
+                                PostgreSQL.
+                            </li>
+
+                            <li class="mb-3">
+                                Designed a user ranking system powered by AWS Machine Learning to improve the
+                                identification of potential users to apply for a loan with
+                                Itau Bank (iCarros owner)
+
+                            </li>
+                            <li class="mb-3">
+                                Maintained large-scale data processing pipelines using AWS Data Pipeline and Apache Pig,
+                                enabling robust data-driven insights and system reliability.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section mb-20">
+            <h2 class="text-3xl font-bold text-teal-400 mb-4">Projects & Contributions</h2>
+            <p class="mb-4">
+                Due to the proprietary nature of my work, most of the projects I've contributed to are not publicly
+                accessible.
+                However, I've delivered high-impact backend solutions, internal automation tools, and system
+                integrations for industries ranging from banking to enterprise CMS platforms.
+            </p>
+            <p class="mb-4">
+                My focus is always on clean architecture, performance, and maintainability. Whether it's building REST
+                APIs, automating processes, or leading cross-system integrations.
+            </p>
+            <p class="mb-4">
+                I'm currently working on side projects to explore new technologies, sharpen my skills, and keep pushing
+                my craft forward.
+            </p>
+        </section>
+
+        <section id="contact" class="section mb-20">
+            <h2 class="text-3xl font-bold text-teal-400 mb-4">Get in Touch</h2>
+            <p class="mb-4">
+                Ready to build something? </br>
+                Whether you need someone to write clean code, smash bugs, lead a team, or just
+                get shit done, I’m here for it.
+            </p>
+            <p class="mb-4">
+                <a href="mailto:vanessa.vps29@gmail.com" class="cta">Say Hello</a>
+            </p>
+        </section>
+    </main>
 </div>
-
-<!-- BG -->
-<div id="bg"></div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
 </body>
 </html>
