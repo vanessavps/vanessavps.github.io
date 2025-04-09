@@ -23,7 +23,7 @@ document.addEventListener("mousemove", function(event) {
 	flashlight.style.setProperty("--y", event.clientY + "px");
 });
 
-/*$(window).on("scroll", function() {
+$(window).on("scroll", function() {
 	let scrollPosition = $(window).scrollTop();
 	$("section").each(function() {
 		let sectionTop = $(this).offset().top - 500;
@@ -33,4 +33,4 @@ document.addEventListener("mousemove", function(event) {
 			$("nav ul li a[href='#" + sectionId + "']").addClass("active");
 		}
 	});
-});*/
+});
