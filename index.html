@@ -10,20 +10,21 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
-<body class="bg-zinc-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 text-lg">
+<body class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 text-lg px-6">
 <div id="flashlight"></div>
 
-<div class="w-full flex lg:justify-between">
-    <header class="sidebar hidden sticky top-0 h-screen lg:flex w-115">
-        <div class="top">
-            <div class="introduction">
-                <h1 class="name text-3xl font-bold text-teal-400 mb-4">Vanessa da Silva</h1>
-                <div class="role text-gray-400">Software Developer</div>
+<div class="w-full flex flex-col lg:flex-row">
+    <header class="sidebar w-full lg:sticky lg:top-0 lg:h-screen p-3 pt-12 pb-24 lg:p-6 lg:w-115 lg:pt-24 lg:pb-24 flex flex-col lg:justify-between">
+    <div class="top">
+            <div class="introduction sm:mb-10 lg:mb-20">
+                <h1 class="name text-4xl lg:text-5xl tracking-tight font-bold text-slate-200 mb-2 lg:mb-5">Vanessa da Silva</h1>
+                <div class="role text-1xl font-bold lg:text-lg text-slate-200 lg:mb-5 mb-2">Software Developer</div>
+                <div class="role text-gray-400">I build reliable, scalable backend systems and clean, elegant code that lasts.</div>
             </div>
-            <nav class="mt-6">
-                <ul class="space-y-4">
+            <nav class="mt-4 lg:mt-6 hidden lg:block">
+                <ul class="flex lg:block space-x-4 lg:space-x-0 lg:space-y-4 text-sm font-bold uppercase">
                     <li>
-                        <a href="#about" class="hover:text-slate-300 transition font-bold uppercase text-base">
+                        <a href="#about" class="hover:text-slate-300 transition font-bold uppercase text-base active">
                             <span class="line"></span>About
                         </a>
                     </li>
@@ -45,8 +46,8 @@
                 </ul>
             </nav>
         </div>
-        <div class="bottom">
-            <ul class="social-media-list" aria-label="Social media">
+        <div class="bottom mt-4 lg:mt-auto">
+            <ul class="social-media-list sm:space-x-4 flex" aria-label="Social media">
                 <li class="item">
                     <a class="block hover:text-slate-200" href="https://github.com/vanessavps"
                        target="_blank" rel="noreferrer noopener"
@@ -86,13 +87,35 @@
     </header>
 
     <!--<main id="main-content" class="w-full ml-15 flex-1 lg:p-10 mx-auto lg:ml-64 max-w-none" >-->
-    <main id="main-content" class="w-full flex-1 p-5 lg:p-10 lg:ml-64">
+    <main id="main-content" class="w-full flex-1 p-3 lg:p-6 lg:ml-64 lg:pt-24 lg:pb-24">
         <section id="about" class="section mb-20">
-            <h2 class="text-3xl font-bold text-teal-400 mb-4">About Me</h2>
+            <h2 class="text-2xl lg:text-3xl font-bold text-teal-400 mb-4">About Me</h2>
             <p class="mb-4"> I’m Vanessa da Silva. A software developer who blends clever structure with dependable
                 execution. With over a decade of experience, I specialize in crafting clean, scalable, and maintainable
                 code using Java, JSP, and JavaScript. But I’m not married to any stack. I’m tech-agnostic, adaptable,
                 and fluent in problem-solving.
+            </p>
+            <p class="mb-4">
+                In the past, I’ve had the opportunity to develop software across a variety of settings, from the
+                <a href="https://www.vizexplorer.com/" title="VizExplorer"
+                   class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300">
+                    gaming industry
+                </a>
+                and
+                <a href="https://www.anz.co.nz/" title="ANZ"
+                   class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300">
+                    large banking corporations
+                </a>,
+                to
+                <a href="https://centricminds.com/" title="Centricminds"
+                      class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300">
+                    lean software teams
+                </a>
+                and
+                <a href="https://www.infracommerce.lat/en-US" title="Infracommerce"
+                   class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300">
+                    e-commerce platforms.
+                </a>
             </p>
             <p class="mb-4">
                 I thrive on digging into the root cause of issues, automating chaos away, and writing code that's not
@@ -113,7 +136,7 @@
         </section>
 
         <section id="experience" class="section mb-20">
-            <h2 class="text-3xl font-bold text-teal-400 mb-4">Experience</h2>
+            <h2 class="text-2xl lg:text-3xl font-bold text-teal-400 mb-4">Experience</h2>
             <div class="employer grid grid-cols-8">
                 <div class="years mb-2 col-span-2">2022 — Current</div>
                 <div class="details mb-6 col-span-6">
@@ -257,7 +280,7 @@
         </section>
 
         <section id="projects" class="section mb-20">
-            <h2 class="text-3xl font-bold text-teal-400 mb-4">Projects & Contributions</h2>
+            <h2 class="text-2xl lg:text-3xl font-bold text-teal-400 mb-4">Projects & Contributions</h2>
             <p class="mb-4">
                 Due to the proprietary nature of my work, most of the projects I've contributed to are not publicly
                 accessible.
@@ -275,7 +298,7 @@
         </section>
 
         <section id="contact" class="section mb-20">
-            <h2 class="text-3xl font-bold text-teal-400 mb-4">Get in Touch</h2>
+            <h2 class="text-2xl lg:text-3xl font-bold text-teal-400 mb-4">Get in Touch</h2>
             <p class="mb-4">
                 Ready to build something? </br>
                 Whether you need someone to write clean code, smash bugs, lead a team, or just
