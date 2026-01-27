@@ -1,314 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanessa da Silva</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/assets/js/main.js"></script>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Vanessa da Silva | Software Developer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
 </head>
+<body>
 
-<body class="bg-[#181229] leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 text-lg px-6">
-<div id="flashlight"></div>
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
 
-<div class="w-full flex flex-col lg:flex-row">
-    <header class="sidebar w-full lg:sticky lg:top-0 lg:h-screen p-3 pt-12 pb-24 lg:p-6 lg:w-115 lg:pt-24 lg:pb-24 flex flex-col lg:justify-between">
-    <div class="top">
-            <div class="introduction sm:mb-10 lg:mb-20">
-                <h1 class="name text-4xl lg:text-5xl tracking-tight font-bold text-slate-200 mb-2 lg:mb-5">Vanessa da Silva</h1>
-                <div class="role text-1xl font-bold lg:text-lg text-slate-200 lg:mb-5 mb-2">Software Developer</div>
-                <div class="role text-gray-400">I build reliable, scalable backend systems and clean, elegant code that lasts.</div>
+<nav>
+    <span class="nav-logo">VANESSA DA SILVA</span>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="hero-container" id="about">
+    <div class="name-side">
+        <p style="font-family: 'Space Mono'; font-size: 0.75rem; color: var(--emerald); margin-bottom: 20px; letter-spacing: 4px;">[ SOFTWARE_DEVELOPER_V.2026 ]</p>
+        <h1 id="tilt-name">Vanessa<br>da Silva</h1>
+    </div>
+
+    <div class="about-side">
+        <p>
+            I turn complex problems into clean, reliable software.
+            With over a decade of experience, I specialize in crafting clean, scalable, and maintainable code.
+        </p>
+        <p>
+            I've developed software across the
+            <a href="https://www.vizexplorer.com/" title="VizExplorer" class="inline-link">gaming industry</a>,
+            <a href="https://ANZ.co.nz/" title="ANZ" class="inline-link">large banking corporations</a>,
+            <a href="https://centricminds.com/" title="Centricminds" class="inline-link">lean software teams</a>, and
+            <a href="https://www.infracommerce.lat/en-US" title="Infracommerce" class="inline-link">e-commerce platforms</a>.
+        </p>
+        <p>
+            I treat code as a <span class="creative-act">creative act</span>. It's where logic meets intuition.
+        </p>
+
+
+        <div style="font-family: 'Space Mono', monospace; font-size: 0.7rem; color: var(--text-dim); margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; line-height: 2.2; letter-spacing: 1px;">
+            <div><span style="color: var(--pink);">[ METADATA ]</span></div>
+
+            <div><span style="color: var(--cobalt);">[ PHYSICAL ]</span> :
+                GYM // DANCE // TENNIS
             </div>
-            <nav class="mt-4 lg:mt-6 hidden lg:block">
-                <ul class="flex lg:block space-x-4 lg:space-x-0 lg:space-y-4 text-sm font-bold uppercase">
-                    <li>
-                        <a href="#about" class="hover:text-slate-300 transition font-bold uppercase text-base active">
-                            <span class="line"></span>About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#experience" class="hover:text-slate-300 transition font-bold uppercase text-base">
-                            <span class="line"></span>Experience
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="hover:text-slate-300 transition font-bold uppercase text-base">
-                            <span class="line"></span>Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="hover:text-slate-300 transition font-bold uppercase text-base">
-                            <span class="line"></span>Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+
+            <div><span style="color: var(--cobalt);">[ GAMING ]</span> :
+                NINTENDO_SWITCH // CURRENT: TINY_BOOKSHOP
+            </div>
+
+            <div><span style="color: var(--cobalt);">[ CREATIVE ]</span> :
+                CROCHET // PAINTING // COLORING // SEWING
+            </div>
+
+            <div style="color: var(--emerald); margin-top: 15px; text-transform: uppercase;">
+                >> LOCATION: AUCKLAND_NZ // WORK_MODE: 100%_REMOTE
+            </div>
         </div>
-        <div class="bottom mt-4 lg:mt-auto">
-            <ul class="social-media-list sm:space-x-4 flex" aria-label="Social media">
-                <li class="item">
-                    <a class="block hover:text-slate-200" href="https://github.com/vanessavps"
-                       target="_blank" rel="noreferrer noopener"
-                       aria-label="GitHub (opens in a new tab)" title="GitHub"><span
-                            class="sr-only">GitHub</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6"
-                             aria-hidden="true">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                        </svg>
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="block hover:text-slate-200"
-                       href="https://www.linkedin.com/in/vanessavps/" target="_blank"
-                       rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)"
-                       title="LinkedIn"><span class="sr-only">LinkedIn</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"
-                             aria-hidden="true">
-                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                        </svg>
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="block hover:text-slate-200"
-                       href="mailto:vanessa.vps29@gmail.com" target="_blank"
-                       rel="noreferrer noopener" aria-label="Email"
-                       title="Email"><span class="sr-only">Email</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                             viewBox="0 0 512 512" class="h-6 w-6" aria-hidden="true">
-                            <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
-                        </svg>
-                    </a>
-                </li>
+
+    </div>
+</div>
+
+<section id="experience">
+    <h2>Experience</h2>
+
+    <div class="exp-item">
+        <div class="exp-date">2022 — CURRENT</div>
+        <div class="exp-content">
+            <h3>Team Leader / Senior Java Developer</h3>
+            <h4>Centricminds | Australia (Remote)</h4>
+            <ul class="description-list">
+                <li>Executing the systematic migration of a monolithic JSP ecosystem toward a decoupled, RESTful architecture utilizing HATEOAS principles.</li>
+                <li>Engineered integrations with SharePoint libraries to feed an enterprise RAG (Retrieval-Augmented Generation) system, allowing users to interact with internal documentation through an AI interface.</li>
+                <li>Restructured the support lifecycle and triage methodology, achieving an 85% reduction in the active ticket queue through direct client engagement and strategic resolution.</li>
+                <li>Acting as the technical focal point for client support, managing triage and resolving immediate fixes to protect developer deep-work and maintain a streamlined ticket queue.</li>
             </ul>
         </div>
+    </div>
 
-    </header>
+    <div class="exp-item">
+        <div class="exp-date">2019 — 2022</div>
+        <div class="exp-content">
+            <h3>Senior Software Developer</h3>
+            <h4>ANZ Banking Group | Auckland, New Zealand</h4>
+            <ul class="description-list">
+                <li>Developed microservices using Node.js on IBM DataPower Gateway to facilitate seamless data transformation between modern mobile web services and the bank's core legacy systems.</li>
+                <li>Authored comprehensive RESTful API documentation utilizing the OpenAPI Specification (OAS) to ensure technical clarity and consistency across development teams.</li>
+                <li>Focused on latency reduction for high-volume mobile banking APIs to ensure a responsive transaction experience for the end user.</li>
+                <li>Collaborated across the stack by contributing to Ember.js front-end tasks, providing backend-to-UI support as needed.</li>
+                <li>Actively assisted the QA team with rigorous testing of core internet banking features to maintain financial-grade stability.</li>
+            </ul>
+        </div>
+    </div>
 
-    <!--<main id="main-content" class="w-full ml-15 flex-1 lg:p-10 mx-auto lg:ml-64 max-w-none" >-->
-    <main id="main-content" class="w-full flex-1 p-3 lg:p-6 lg:ml-64 lg:pt-24 lg:pb-24">
-        <section id="about" class="section mb-20">
-            <h2 class="text-2xl lg:text-3xl font-bold text-teal-400 mb-4">About Me</h2>
-            <p class="mb-4"> I’m Vanessa da Silva. A software developer who blends clever structure with dependable
-                execution. With over a decade of experience, I specialize in crafting clean, scalable, and maintainable
-                code using Java, JSP, and JavaScript. But I’m not married to any stack. I’m tech-agnostic, adaptable,
-                and fluent in problem-solving.
-            </p>
-            <p class="mb-4">
-                In the past, I’ve had the opportunity to develop software across a variety of settings, from the
-                <a href="https://www.vizexplorer.com/" title="VizExplorer"
-                   class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300">
-                    gaming industry
-                </a>
-                and
-                <a href="https://www.anz.co.nz/" title="ANZ"
-                   class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300">
-                    large banking corporations
-                </a>,
-                to
-                <a href="https://centricminds.com/" title="Centricminds"
-                      class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300">
-                    lean software teams
-                </a>
-                and
-                <a href="https://www.infracommerce.lat/en-US" title="Infracommerce"
-                   class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300">
-                    e-commerce platforms.
-                </a>
-            </p>
-            <p class="mb-4">
-                I thrive on digging into the root cause of issues, automating chaos away, and writing code that's not
-                just functional but elegant and easy to understand. Whether I’m collaborating with a team or flying
-                solo, I manage my time and tasks with purpose. No micromanaging needed.
-            </p>
-            <p class="mb-4">
-                What sets me apart? I treat code as a creative act. It’s where logic meets intuition. I follow the Boy
-                Scout Rule: leave the code better than you found it. That mindset pushes me to refactor, rethink, and
-                constantly refine.
-            </p>
-            <p class="mb-4">
-                When I’m not coding, I’m buried in a book, dancing off stress, hitting the tennis court, or diving
-                headfirst into a new side quest. I love keeping my mind active and exploring whatever catches my
-                curiosity.
-            </p>
+    <div class="exp-item">
+        <div class="exp-date">2017 — 2019</div>
+        <div class="exp-content">
+            <h3>Software Developer</h3>
+            <h4>VizExplorer | Wellington, New Zealand</h4>
+            <ul class="description-list">
+                <li>Engineered a custom SQL parser using ANTLR to validate the integrity of dynamically generated queries, ensuring that structural logic variations maintained identical data outputs.</li>
+                <li>Developed a suite of Java-based REST utilities to automate batch data validation and systemic changes, accelerating the upgrade process for casino gaming systems.</li>
+                <li>Managed Jenkins CI/CD pipelines to ensure a reliable and predictable delivery lifecycle.</li>
+            </ul>
+        </div>
+    </div>
 
-        </section>
+    <div class="exp-item">
+        <div class="exp-date">2015 — 2017</div>
+        <div class="exp-content">
+            <h3>Software Developer</h3>
+            <h4>iCarros (Itaú Bank) | São Paulo, Brazil</h4>
+            <ul class="description-list">
+                <li>Developed a predictive ranking system to prioritize loan applicants for the bank's sales team, optimizing the conversion funnel by focusing on high-probability leads.</li>
+                <li>Managed the complete data lifecycle for the propensity model, including data cleaning, training via AWS Machine Learning, and Java backend integration.</li>
+                <li>Engineered data pipelines using Apache Pig and Hadoop to process high-volume user event data stored in AWS S3 for business reporting and model training.</li>
+                <li>Built and maintained high-traffic automotive platform features utilizing a Java, JSF, and PostgreSQL stack.</li>
+            </ul>
+        </div>
+    </div>
 
-        <section id="experience" class="section mb-20">
-            <h2 class="text-2xl lg:text-3xl font-bold text-teal-400 mb-4">Experience</h2>
-            <div class="employer grid grid-cols-8">
-                <div class="years mb-2 col-span-2">2022 — Current</div>
-                <div class="details mb-6 col-span-6">
-                    <div class="role-title font-semibold text-lg text-slate-300">
-                        Team Leader - Centricminds
-                        <div class="other-roles text-zinc-500">
-                            Senior Java Developer
-                        </div>
-                    </div>
-                    <div class="description">
-                        <ul class="list-disc">
-                            <li class="mb-3">
-                                Leading a small development team focused on building and maintaining an intranet CMS
-                                using Java, JSP, and JavaScript.
-                            </li>
+    <div class="exp-item">
+        <div class="exp-date">2013 — 2014</div>
+        <div class="exp-content">
+            <h3>Software Developer</h3>
+            <h4>Infracommerce | São Paulo, Brazil</h4>
+            <ul class="description-list">
+                <li>Orchestrated complex data flows between e-commerce platforms and external ERP systems using Oracle BPEL to ensure system interoperability.</li>
+                <li>Performed continuous tuning of Solr search functionality, managing synonyms and relevance logic to improve product discoverability on enterprise-scale retail sites.</li>
+                <li>Collaborated directly with clients to gather technical requirements, ensuring backend solutions aligned with specific business goals.</li>
+                <li>Developed interactive user interfaces using jQuery, JSF, and JSP, bridging the gap between Java 7 backends and web requirements.</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-                            <li class="mb-3">
-                                Developed and maintained secure REST APIs following HATEOAS principles, including
-                                integrations with platforms like SharePoint, Splunk, and Duo for seamless system
-                                connectivity and enhanced application security through MFA.
-                            </li>
-                            <li class="mb-3">
-                                Introduced and implemented a structured ticket triage process that reduced backlog from
-                                120+
-                                tickets to under 15. This included account provisioning workflows, clear ticket tagging,
-                                escalation protocols, and dashboard visibility across team workloads.
-                            </li>
-                            <li class="mb-3">
-                                Responsible for ticket assignment and workload balancing across developers based on
-                                active
-                                queue sizes.
-                            </li>
-                            <li class="mb-3">
-                                Conducted one-on-one meetings with developers to identify blockers and improve daily
-                                workflows.
-                            </li>
-                            <li class="mb-3">
-                                Participated in candidate interviews, conducted technical assessments, and reviewed code
-                                submissions to ensure high hiring standards.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<section id="expertise">
+    <h2>Expertise</h2>
+    <div class="skills-grid">
+        <div class="skill-box">
+            <span class="tag">01</span>
+            <h3>Backend Architecture</h3>
+            <p>Building stable, scalable foundations for systems that need to handle high traffic and complex data,
+                particularly in banking and gaming environments.</p>
+        </div>
+        <div class="skill-box">
+            <span class="tag">02</span>
+            <h3>Automation</h3>
+            <p>Identifying repetitive manual tasks and building internal tools or scripts to automate them, making daily operations more efficient for the whole team.</p>
+        </div>
+        <div class="skill-box">
+            <span class="tag">03</span>
+            <h3>System Integration</h3>
+            <p>Connecting different platforms and APIs (like CMS tools, security layers, or logging systems) so they work together reliably and securely.</p>
+        </div>
+        <div class="skill-box">
+            <span class="tag">04</span>
+            <h3>Support & Triage Strategy</h3>
+            <p>Managing direct client support and ticket triage. I act as the focal point to categorize issues, resolve quick fixes immediately, and assign complex tasks to the right developers to keep the queue low.</p>
+        </div>
+        <div class="skill-box">
+            <span class="tag">05</span>
+            <h3>Technical Quality Control</h3>
+            <p>Serving as the final gatekeeper for deployments. I perform comprehensive testing on all team output to ensure reliability in the absence of dedicated QA.</p>
+        </div>
+        <div class="skill-box">
+            <span class="tag">06</span>
+            <h3>Systematic Refactoring</h3>
+            <p>Applying the "Boy Scout Rule" to every codebase. I perform cautious, purposeful refactoring to leave code cleaner and more maintainable than I found it.</p>
+        </div>
+    </div>
+</section>
 
-            <div class="employer grid grid-cols-8">
-                <div class="years mb-2 col-span-2">2019 — 2022</div>
-                <div class="details mb-6 col-span-6">
-                    <div class="role-title font-semibold text-lg text-slate-300">
-                        Senior Software Developer - ANZ (Australia and New Zealand Banking Group)
-                        <div class="other-roles text-zinc-500">
-                            Senior Integration Developer
-                        </div>
-                    </div>
-                    <div class="description">
-                        <ul class="list-disc">
-                            <li class="mb-3">
-                                Developed and enhanced internet banking features using Java, Ember.js, and
-                                Handlebars.js, improving user experience across customer-facing platforms.
-                            </li>
+<section id="manifesto" style="text-align: center; padding: 150px 10%;">
+    <p style="font-family: 'Space Mono', monospace; font-size: 0.7rem; color: var(--pink); letter-spacing: 5px; margin-bottom: 30px;">THE_PHILOSOPHY</p>
+    <h3 style="font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.4; max-width: 900px; margin: 0 auto; font-weight: 500;">
+        "I follow the <span style="color: var(--cobalt);">Boy Scout Rule</span>: leave the code better than you found it. As a leader, I act as the <span style="color: var(--emerald);">quality gatekeeper</span>, ensuring every deployment is refined, tested, and built to last."
+    </h3>
+</section>
 
-                            <li class="mb-3">
-                                Maintained and optimized REST APIs to support high-volume mobile app transactions
-                                with consistent performance and stability.
-                            </li>
-                            <li class="mb-3">
-                                Built internal automation tools using Java, JSP, Handlebars, and jQuery to streamline
-                                workflows and reduce manual overhead.
-                            </li>
-                            <li class="mb-3">
-                                Built microservices for IBM DataPower Gateway using Node.js.
-                            </li>
-                            <li class="mb-3">
-                                Collaborated closely with QA teams to ensure high code quality and reliable delivery.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<section class="contact" id="contact">
+    <p style="font-family: 'Space Mono'; font-size: 0.75rem; margin-bottom: 30px; letter-spacing: 5px; color: var(--emerald);">READY_TO_BUILD?</p>
 
-            <div class="employer grid grid-cols-8 ">
-                <div class="years mb-2 col-span-2">2017 — 2019</div>
-                <div class="details mb-6 col-span-6">
-                    <div class="role-title font-semibold text-lg text-slate-300">
-                        Software Developer - VizExplorer
-                    </div>
-                    <div class="description">
-                        <ul class="list-disc">
-                            <li class="mb-3">
-                                Maintained and enhanced an internal automation tool using Java, JSP, Handlebars, jQuery,
-                                and CSS.
-                            </li>
+    <a href="mailto:vanessa.vps29@gmail.com" class="contact-link">Say Hello</a>
 
-                            <li class="mb-3">
-                                Built a REST API utility in Java to automate tasks and run batch validations, improving
-                                workflow efficiency.
-                            </li>
-                            <li class="mb-3">
-                                Maintained Jenkins CI/CD pipelines to ensure stable deployment and integration flows.
-                            </li>
-                            <li class="mb-3">
-                                Created a T-SQL comparison tool using ANTLR, streamlining database analysis and reducing
-                                manual review.
-                            </li>
-                            <li class="mb-3">
-                                Mentored a junior developer by providing code reviews, technical guidance, and process
-                                support.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="employer grid grid-cols-8">
-                <div class="years mb-2 col-span-2">2015 — 2017</div>
-                <div class="details mb-6 col-span-6">
-                    <div class="role-title font-semibold text-lg text-slate-300">
-                        Software Developer - iCarros
-                    </div>
-                    <div class="description">
-                        <ul class="list-disc">
-                            <li class="mb-3">
-                                Delivered full-stack solutions for the iCarros platform using Java, JSF, jQuery, and
-                                PostgreSQL.
-                            </li>
-
-                            <li class="mb-3">
-                                Designed a user ranking system powered by AWS Machine Learning to improve the
-                                identification of potential users to apply for a loan with
-                                Itau Bank (iCarros owner)
-
-                            </li>
-                            <li class="mb-3">
-                                Maintained large-scale data processing pipelines using AWS Data Pipeline and Apache Pig,
-                                enabling robust data-driven insights and system reliability.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section mb-20">
-            <h2 class="text-2xl lg:text-3xl font-bold text-teal-400 mb-4">Projects & Contributions</h2>
-            <p class="mb-4">
-                Due to the proprietary nature of my work, most of the projects I've contributed to are not publicly
-                accessible.
-                However, I've delivered high-impact backend solutions, internal automation tools, and system
-                integrations for industries ranging from banking to enterprise CMS platforms.
-            </p>
-            <p class="mb-4">
-                My focus is always on clean architecture, performance, and maintainability. Whether it's building REST
-                APIs, automating processes, or leading cross-system integrations.
-            </p>
-            <p class="mb-4">
-                I'm currently working on side projects to explore new technologies, sharpen my skills, and keep pushing
-                my craft forward.
-            </p>
-        </section>
-
-        <section id="contact" class="section mb-20">
-            <h2 class="text-2xl lg:text-3xl font-bold text-teal-400 mb-4">Get in Touch</h2>
-            <p class="mb-4">
-                Ready to build something? </br>
-                Whether you need someone to write clean code, smash bugs, lead a team, or just
-                get shit done, I’m here for it.
-            </p>
-            <p class="mb-4">
-                <a href="mailto:vanessa.vps29@gmail.com" class="cta">Say Hello</a>
-            </p>
-        </section>
-    </main>
-</div>
+    <div class="social-icons">
+        <a href="https://github.com/vanessavps" target="_blank" class="social-link github" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/vanessavps/" target="_blank" class="social-link linkedin" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+        </a>
+    </div>
+</section>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
