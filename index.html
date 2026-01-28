@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanessa da Silva | Software Developer</title>
+    <link rel="preload" href="assets/fonts/playfair-display-v40-latin-500italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/space-mono-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Vanessa da Silva | Software Developer & Team Lead</title>
+
+    <meta name="theme-color" content="#ff008a">
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vanessa da Silva is a Senior Software Developer and Team Lead based in Auckland, NZ. Specializing in Java, Backend Architecture, and systematic refactoring.">
+    <meta name="keywords" content="Vanessa da Silva, Software Developer Auckland, Java Developer, Senior Software Engineer, Team Lead, vanessadasilva.dev">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vanessadasilva.dev/">
+    <meta property="og:title" content="Vanessa da Silva | Senior Software Developer">
+    <meta property="og:description" content="Senior Software Developer and Team Lead based in Auckland, NZ. Specialist in Java and Backend Architecture.">
+    <meta property="og:image" content="https://vanessadasilva.dev/assets/img/meta-share.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Vanessa da Silva | Senior Software Developer">
+    <meta property="twitter:description" content="Senior Software Developer and Team Lead based in Auckland, NZ. Specialist in Java and Backend Architecture.">
+
+    <link rel="canonical" href="https://vanessadasilva.dev/" />
     <link href="assets/css/style.css" rel="stylesheet">
-    <script src="assets/js/jquery.min.js"></script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Vanessa da Silva",
+            "jobTitle": "Senior Software Developer",
+            "url": "https://vanessadasilva.dev",
+            "sameAs": [
+                "https://github.com/vanessavps",
+                "https://www.linkedin.com/in/vanessavps/"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Auckland",
+                "addressCountry": "NZ"
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -18,7 +56,9 @@
 <div class="glow glow-2"></div>
 
 <nav>
-    <span class="nav-logo">VANESSA DA SILVA</span>
+    <a href="#about" class="nav-logo-link" aria-label="Vanessa da Silva - Back to Top">
+        <span class="nav-logo">VANESSA DA SILVA</span>
+    </a>
     <div class="nav-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
@@ -29,8 +69,8 @@
 
 <div class="hero-container" id="about">
     <div class="name-side">
-        <p style="font-family: 'Space Mono'; font-size: 0.75rem; color: var(--emerald); margin-bottom: 20px; letter-spacing: 4px;">[ SOFTWARE_DEVELOPER_V.2026 ]</p>
-        <h1 id="tilt-name">Vanessa<br>da Silva</h1>
+        <p class="role-name" aria-label="Senior Software Developer 2026">[ SOFTWARE_DEVELOPER_V.2026 ]</p>
+        <h1 id="tilt-name"><span>Vanessa</span><span>da Silva</span></h1>
     </div>
 
     <div class="about-side">
@@ -40,33 +80,38 @@
         </p>
         <p>
             I've developed software across the
-            <a href="https://www.vizexplorer.com/" title="VizExplorer" class="inline-link">gaming industry</a>,
-            <a href="https://ANZ.co.nz/" title="ANZ" class="inline-link">large banking corporations</a>,
-            <a href="https://centricminds.com/" title="Centricminds" class="inline-link">lean software teams</a>, and
-            <a href="https://www.infracommerce.lat/en-US" title="Infracommerce" class="inline-link">e-commerce platforms</a>.
+            <a href="https://www.vizexplorer.com/" title="VizExplorer" aria-label="VizExplorer website link" class="inline-link">gaming industry</a>,
+            <a href="https://ANZ.co.nz/" title="ANZ" aria-label="ANZ website link" class="inline-link">large banking corporations</a>,
+            <a href="https://centricminds.com/" title="Centricminds" aria-label="Centricminds website link" class="inline-link">lean software teams</a>, and
+            <a href="https://www.infracommerce.lat/en-US" title="Infracommerce" aria-label="Infracommerce website link" class="inline-link">e-commerce platforms</a>.
         </p>
         <p>
             I treat code as a <span class="creative-act">creative act</span>. It's where logic meets intuition.
         </p>
 
 
-        <div style="font-family: 'Space Mono', monospace; font-size: 0.7rem; color: var(--text-dim); margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; line-height: 2.2; letter-spacing: 1px;">
-            <div><span style="color: var(--pink);">[ METADATA ]</span></div>
+        <div class="metadata" aria-label="Personal Metadata">
+            <div>
+                <span class="pink">[ METADATA ]</span>
+            </div>
 
-            <div><span style="color: var(--cobalt);">[ PHYSICAL ]</span> :
+            <div aria-label="Physical activities: Gym, Dance, and Tennis">
+                <span class="cobalt">[ PHYSICAL ] ></span>
                 GYM // DANCE // TENNIS
             </div>
 
-            <div><span style="color: var(--cobalt);">[ GAMING ]</span> :
+            <div aria-label="Gaming interests: Nintendo Switch. Currently playing: Tiny Bookshop">
+                <span class="cobalt">[ GAMING ] ></span>
                 NINTENDO_SWITCH // CURRENT: TINY_BOOKSHOP
             </div>
 
-            <div><span style="color: var(--cobalt);">[ CREATIVE ]</span> :
+            <div aria-label="Creative hobbies: Crochet, Painting, Coloring, and Sewing">
+                <span class="cobalt">[ CREATIVE ] ></span>
                 CROCHET // PAINTING // COLORING // SEWING
             </div>
 
-            <div style="color: var(--emerald); margin-top: 15px; text-transform: uppercase;">
-                >> LOCATION: AUCKLAND_NZ // WORK_MODE: 100%_REMOTE
+            <div class="location" aria-label="Location: Auckland, New Zealand. Working mode: 100% remote.">
+                >> LOCATION: AUCKLAND, NZ // WORK_MODE: 100%_REMOTE
             </div>
         </div>
 
@@ -184,31 +229,33 @@
     </div>
 </section>
 
-<section id="manifesto" style="text-align: center; padding: 150px 10%;">
-    <p style="font-family: 'Space Mono', monospace; font-size: 0.7rem; color: var(--pink); letter-spacing: 5px; margin-bottom: 30px;">THE_PHILOSOPHY</p>
-    <h3 style="font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.4; max-width: 900px; margin: 0 auto; font-weight: 500;">
-        "I follow the <span style="color: var(--cobalt);">Boy Scout Rule</span>: leave the code better than you found it. As a leader, I act as the <span style="color: var(--emerald);">quality gatekeeper</span>, ensuring every deployment is refined, tested, and built to last."
-    </h3>
+<section id="manifesto">
+    <p class="philosophy_title">THE_PHILOSOPHY</p>
+    <p class="philosophy">
+        "I follow the <span class="cobalt">Boy Scout Rule</span>: leave the code better than you found it.
+        As a leader, I act as the <span class="emerald">quality gatekeeper</span>, ensuring every deployment is refined, tested, and built to last."
+    </p>
 </section>
 
 <section class="contact" id="contact">
-    <p style="font-family: 'Space Mono'; font-size: 0.75rem; margin-bottom: 30px; letter-spacing: 5px; color: var(--emerald);">READY_TO_BUILD?</p>
+    <p class="title">READY_TO_BUILD?</p>
 
     <a href="mailto:vanessa.vps29@gmail.com" class="contact-link">Say Hello</a>
 
     <div class="social-icons">
-        <a href="https://github.com/vanessavps" target="_blank" class="social-link github" title="GitHub">
+        <a href="https://github.com/vanessavps" target="_blank" class="social-link github" title="GitHub" aria-label="Vanessa da Silva on GitHub">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
             </svg>
         </a>
-        <a href="https://www.linkedin.com/in/vanessavps/" target="_blank" class="social-link linkedin" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/vanessavps/" target="_blank" class="social-link linkedin" title="LinkedIn" aria-label="Vanessa da Silva on LinkedIn">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
             </svg>
         </a>
     </div>
 </section>
+<script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
