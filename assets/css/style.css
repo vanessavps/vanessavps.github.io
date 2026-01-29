@@ -406,14 +406,21 @@ h2 {
 .github:hover {
     color: var(--pink);
     filter: drop-shadow(0 0 10px var(--pink));
-    transform: scale(1.2) rotate(-5deg);
+    transform: scale(1.2);
     opacity: 1;
 }
 
 .linkedin:hover {
     color: var(--cobalt);
     filter: drop-shadow(0 0 10px var(--cobalt));
-    transform: scale(1.2) rotate(5deg);
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.cvicon:hover {
+    color: var(--emerald);
+    filter: drop-shadow(0 0 10px var(--emerald));
+    transform: scale(1.2);
     opacity: 1;
 }
 
@@ -516,6 +523,66 @@ h2 {
 
 .pink {
     color: var(--pink);
+}
+
+
+.nav-cv-link {
+    color: #50fa7b !important; /* Your emerald accent */
+    font-weight: bold;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+}
+
+.nav-cv-link:hover {
+    background: rgba(80, 250, 123, 0.1);
+    border-color: #50fa7b;
+    text-shadow: 0 0 8px rgba(80, 250, 123, 0.5);
+}
+
+.error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #0a0a0a;
+}
+
+.error-content h1 {
+    font-size: 8rem;
+    color: var(--emerald);
+    margin: 0;
+    text-shadow: 0 0 20px rgba(93, 255, 84, 0.75);
+}
+
+.mono-text {
+    font-family: 'Space Mono', monospace;
+    color: var(--pink);
+    margin-bottom: 2rem;
+}
+
+.return-home {
+    font-family: 'Space Mono', monospace;
+    color: var(--emerald);
+}
+
+.return-home:hover {
+    color: var(--emerald);
+    filter: drop-shadow(0 0 10px var(--emerald));
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.flicker-text {
+    animation: flicker 2s infinite;
+    color: #50fa7b;
 }
 
 @media (max-width: 1100px) {
@@ -623,5 +690,13 @@ h2 {
         width: 100vw;
         height: 100vw;
         opacity: 0.25;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-cv-link {
+        margin-left: 0;
+        margin-top: 15px;
+        display: inline-block;
     }
 }
