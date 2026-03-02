@@ -517,6 +517,7 @@ h2 {
     line-height: 2.2;
     letter-spacing: 1px;
     margin-top: 50px;
+    font-weight: 600;
 }
 
 .metadata .location {
