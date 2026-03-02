@@ -161,9 +161,15 @@ nav {
     gap: 80px;
 }
 
+.name-side, .about-side {
+    @media (min-width: 992px) {
+        min-height: 520px;
+    }
+}
+
 .name-side h1 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(3.5rem, 11vw, 8.5rem);
+    font-size: clamp(3.5rem, 11vw, 7.5rem);
     font-style: italic;
     font-weight: 500;
     line-height: 0.95;
@@ -187,6 +193,12 @@ nav {
     max-width: 520px;
     padding-left: 50px;
     border-left: 2px solid var(--pink);
+}
+
+.about-side .summary, .name-side .name {
+    @media (min-width: 992px) {
+        min-height: 300px;
+    }
 }
 
 .about-side p {
@@ -496,15 +508,15 @@ h2 {
     color: var(--emerald);
 }
 
-.metadata {
+.keywords, .metadata {
     font-family: 'Space Mono', monospace;
     font-size: 0.7rem;
     color: var(--text-dim);
-    margin-top: 40px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 20px;
     line-height: 2.2;
     letter-spacing: 1px;
+    margin-top: 50px;
 }
 
 .metadata .location {
