@@ -520,6 +520,10 @@ h2 {
     font-weight: 600;
 }
 
+.keywords div, .metadata div {
+    padding-top: 5px;
+}
+
 .metadata .location {
     color: var(--emerald);
     margin-top: 15px;
