@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /assets/docs/*.pdf
+Disallow: /assets/docs/*.docx
 Sitemap: https://vanessadasilva.dev/sitemap.xml

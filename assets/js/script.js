@@ -69,7 +69,7 @@ $(document).ready(function() {
 });
 
 function initCVDownloadTracking() {
-	const $cvLinks = $('a[href$=".pdf"]');
+	const $cvLinks = $('a[href$=".docx"]');
 
 	if (typeof gtag !== 'function' || $cvLinks.length === 0) {
 		return;
